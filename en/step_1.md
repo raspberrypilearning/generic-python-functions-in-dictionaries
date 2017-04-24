@@ -1,76 +1,59 @@
-# New project
+# Advanced Dictionaries in Python
 
-Each project contains a set of directories for each language, you're set up now with an `en` directory that contains the necessary files to get you going.
+Dictionaries can be used to store all types of data, which can lead to some interesting uses.
 
-* [meta.yml](#metayml)
-* [Steps - step_1.md, step_2.md, etc](#steps)
+You can store custom or inbuilt functions and methods within a dictionary. There are plenty of examples when this might be useful, put one particular example is when you might use a **CASE** statement in another programming language.
 
+Have a look at this bit of code. It's an example of a menu system, where by different functions are run depending on whether the user types in the values 1, 2 or 3.
 
-## meta.yml
+~~~python
+def option1():
+    print('You chose 1')
 
-The `meta.yml` file sets lots of basic information for the project.
+def option2():
+    print('You chose 2')
 
-``` yml
-title: The title of the project
-hero_image: images/banner.png # The image used on the listing view
-subtitle: Project subtitle # Used on the listing view
-description: Project description # Used on the listing view
-published: false # A boolean - `true` or`false` - that controls whether the project will appear on the listing view
-steps: # A list of all the steps
-  - title: How to get started # Used as the sidebar title for the step
-    duration: 60 # Not used yet
-```
+def option3():
+    print('You chose 3')
 
-## Steps
+choice = input():
 
-* [Links](#links)
-* [Resources](#resources)
-* [Images](#images)
-* [Definitions](#definitions)
-* [Hints](#hints)
+if choice == '1':
+    option1()
+elif choice == '2':
+    option2()
+elif choice == '3':
+    option3()
+~~~
 
-Project steps are written in the [Kramdown](https://kramdown.gettalong.org/) variety of markdown. There is a [quick reference guide](https://kramdown.gettalong.org/quickref.html) and [full syntax documentation](https://kramdown.gettalong.org/syntax.html).
+Rather than chaining `if` and `elif` conditionals together, you can use a dictionary of functions. For instance:
 
-### Links, resources & images
+~~~python
+options = {'1': option1, '2': option2, '3': option3}
+~~~
 
-See [kramdown documentation](https://kramdown.gettalong.org/quickref.html#links-and-images) for more details.
+This now has the possible user's input as the key, and the function to be called as the value. Now with an additional line, the user's choice can be prompted for and the appropriate function can be called.
 
-#### Links
+~~~python
+options[input('Choose 1, 2 or 3 ')]()
+~~~
 
-A [link](http://kramdown.gettalong.org) to the kramdown homepage.
+So the completed code now looks like this:
 
-#### Resources
-
-A [link to a file in the resources directory](resources/worksheet.pdf){:download='filename.pdf'}. The download part will make the file automatically download rather than be rendered in the browser, the filename you'd like the file to be saved with is the second bit after the `=`. The `/slash learning` application will ensure the resource is available.
-
-#### Images
-
-![Banner image](images/banner.png) - the link text becomes the alternative text for the image. The `/slash learning` application will ensure the image is available.
-
-### Definitions
-
-Definitions can be written using HTML abbreviations, which are a standard part of [kramdown](https://kramdown.gettalong.org/quickref.html#abbreviations)
-
-```
-To do this you might require a variable or a two word definition.
-
-*[variable]: An object that has a name and stores a value.
-
-*[two word]: Definitions are markdown, and can have [links](http://kramdown.gettalong.org) etc
-```
+~~~python
+def option1():
+    print('You chose 1')
 
 
-### Hints
+def option2():
+    print('You chose 2')
 
-Still very much a work in progress, but here's how you could get one to work currently. The id `#hint-1` on the heading and the class `.hint-1` on the body must match up.
 
-```
-### Hint
-{: .hint-heading #hint-1 }
+def option3():
+    print('You chose 3')
 
-Here's a hint of how to do this project. Just a change to force an update.
-{: .hint-content .hint-1 }
 
-And a little more text for the first hint.
-{: .hint-content .hint-1 }
-```
+options = {'1': option1, '2': option2, '3': option3}
+
+options[input('Choose 1, 2 or 3 ')]()
+~~~
