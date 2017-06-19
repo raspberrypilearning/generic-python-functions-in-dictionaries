@@ -1,10 +1,8 @@
-title: python-advanced-dictionaries
+title: Using functions in dictionaries
 hero_image: images/banner.png
-subtitle: python-advanced-dictionaries subtitle
 description: python-advanced-dictionaries description
 original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
 theme: cc-prototype
 published: false
 steps:
-  - title: Step one
-    duration: 60
+  - title: Functions in dictionaries

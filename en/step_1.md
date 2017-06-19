@@ -1,10 +1,10 @@
-### Advanced Dictionaries in Python
+### Using functions in dictionaries
 
 Dictionaries can be used to store all types of data, which can lead to some interesting uses.
 
 You can store custom or inbuilt functions and methods within a dictionary. There are plenty of examples when this might be useful, put one particular example is when you might use a **CASE** statement in another programming language.
 
-Have a look at this bit of code. It's an example of a menu system, where by different functions are run depending on whether the user types in the values 1, 2 or 3.
+Have a look at this bit of code. It's an example of a menu system, where different functions are run depending on whether the user types in the values 1, 2 or 3.
 
 ~~~python
 def option1():
