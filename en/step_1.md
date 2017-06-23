@@ -1,10 +1,10 @@
 ### Using functions in dictionaries
 
-Dictionaries can be used to store all types of data, which can lead to some interesting uses.
+Dictionaries can store all types of data, which makes them useful for many things.
 
-You can store custom or inbuilt functions and methods within a dictionary. There are plenty of examples when this might be useful, put one particular example is when you might use a **CASE** statement in another programming language.
+You can store custom or inbuilt functions and methods within a dictionary. There are plenty of times when this comes in handy, for example when, in another programming language, you would use a **CASE** statement.
 
-Have a look at this bit of code. It's an example of a menu system, where different functions are run depending on whether the user types in the values 1, 2 or 3.
+Have a look at the bit of code below. It's an example of a menu system, where different functions are run depending on whether the user types in the values 1, 2 or 3.
 
 ~~~python
 def option1():
@@ -32,13 +32,13 @@ Rather than chaining `if` and `elif` conditionals together, you can use a dictio
 options = {'1': option1, '2': option2, '3': option3}
 ~~~
 
-This now has the possible user's input as the key, and the function to be called as the value. Now with an additional line, the user's choice can be prompted for and the appropriate function can be called.
+This now has the possible user inputs as the keys, and the functions to be called as the values. With an additional line, the user's choice can be prompted for and the appropriate function can be called.
 
 ~~~python
 options[input('Choose 1, 2 or 3 ')]()
 ~~~
 
-So the completed code now looks like this:
+So the completed code looks like this:
 
 ~~~python
 def option1():
