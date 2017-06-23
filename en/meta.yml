@@ -1,6 +1,6 @@
-title: Advance Python dictionaries
+title: Storing functions in Python dictionaries
 hero_image: images/banner.png
-description: More advance dictionaries in Python
+description: Store and use functions in dictionaries
 original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
 theme: cc-prototype
 duration: 1 # 1, 2 or 3
@@ -9,5 +9,5 @@ ingredient: false
 interests: ""
 technologies: ""
 steps:
-  - title: 
+  - title: Store and use functions in dictionaries
 
