@@ -1,10 +1,13 @@
-title: python-advanced-dictionaries
+title: Advance Python dictionaries
 hero_image: images/banner.png
-subtitle: python-advanced-dictionaries subtitle
-description: python-advanced-dictionaries description
+description: More advance dictionaries in Python
 original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
 theme: cc-prototype
-published: false
+duration: 1 # 1, 2 or 3
+listed: false
+ingredient: false
+interests: ""
+technologies: ""
 steps:
-  - title: Step one
-    duration: 60
+  - title: 
+
