@@ -1,24 +1,13 @@
-<<<<<<< HEAD
 title: Storing functions in Python dictionaries
 hero_image: images/banner.png
 description: Store and use functions in dictionaries
 original_url:
-=======
-title: Using functions in dictionaries
-hero_image: images/banner.png
-description: How to combine dictionaries and functions in Python
-original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
->>>>>>> draft
 theme: cc-prototype
 duration: 1
 listed: false
 ingredient: true
+copyedit: true
 interests: ""
 technologies: "python"
 steps:
-<<<<<<< HEAD
   - title: Store and use functions in dictionaries
-
-=======
-  - title: Functions in dictionaries
->>>>>>> draft
