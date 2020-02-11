@@ -1,20 +1,20 @@
-### Using functions in dictionaries
+### Χρήση συναρτήσεων σε λεξικά
 
-Dictionaries can store all types of data, which makes them useful for many things.
+Τα λεξικά μπορούν να αποθηκεύσουν όλους τους τύπους δεδομένων, γεγονός που τα καθιστά χρήσιμα για πολλά πράγματα.
 
-You can store custom or inbuilt functions and methods within a dictionary. There are plenty of times when this comes in handy, for example when, in another programming language, you would use a **CASE** statement.
+Μπορείς να αποθηκεύσεις προσαρμοσμένες ή έτοιμες συναρτήσεις και μεθόδους μέσα σε ένα λεξικό. Υπάρχουν πολλές φορές που αυτό θα φανεί χρήσιμο, για παράδειγμα όταν, σε άλλη γλώσσα προγραμματισμού, θα χρησιμοποιούσες μια δήλωση **CASE**.
 
-Have a look at the bit of code below. It's an example of a menu system, where different functions are run depending on whether the user types in the values 1, 2 or 3.
+Ρίξε μια ματιά στον κώδικα παρακάτω. Είναι ένα παράδειγμα ενός συστήματος μενού, όπου εκτελούνται διάφορες συναρτήσεις ανάλογα με το αν ο χρήστης πληκτρολογεί τις τιμές 1, 2 ή 3.
 
 ```python
 def option1():
-  print('You chose 1')
+  print('Επέλεξες 1')
 
 def option2():
-  print('You chose 2')
+  print('Επέλεξες 2')
 
 def option3():
-  print('You chose 3')
+  print('Επέλεξες 3')
 
 choice = input():
 
@@ -26,34 +26,34 @@ elif choice == '3':
   option3()
 ```
 
-Rather than chaining `if` and `elif` conditionals together, you can use a dictionary of functions. For instance:
+Αντί να χρησιμοποιήσεις δηλώσεις `if` και `elif`, μπορείς να χρησιμοποιήσεις ένα λεξικό συναρτήσεων. Για παράδειγμα:
 
 ```python
 options = {'1': option1, '2': option2, '3': option3}
 ```
 
-This now has the possible user inputs as the keys, and the functions to be called as the values. With an additional line, the user's choice can be prompted for and the appropriate function can be called.
+Αυτό έχει τώρα τις πιθανές εισόδους του χρήστη ως κλειδιά και τις συναρτήσεις που καλούνται ως τιμές. Με μια επιπλέον γραμμή, μπορεί να ζητηθεί η επιλογή του χρήστη και να καλείται η κατάλληλη συνάρτηση.
 
 ```python
-options[input('Choose 1, 2 or 3 ')]()
+options[input('Επίλεξε 1, 2 or 3 ')]()
 ```
 
-So the completed code looks like this:
+Έτσι, ο ολοκληρωμένος κώδικας μοιάζει ως εξής:
 
 ```python
 def option1():
-  print('You chose 1')
+  print('Επέλεξες 1')
 
 
 def option2():
-  print('You chose 2')
+  print('Επέλεξες 2')
 
 
 def option3():
-  print('You chose 3')
+  print('Επέλεξες 3')
 
 
 options = {'1': option1, '2': option2, '3': option3}
 
-options[input('Choose 1, 2 or 3 ')]()
+options[input('Επίλεξε 1, 2 or 3 ')]()
 ```
